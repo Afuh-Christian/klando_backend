@@ -15,32 +15,34 @@ namespace API.Controllers
             this.baseRepository = baseRepository;
         }
 
-        [HttpPost]
-        public Task<T> AddOrUPdate(T entity)
-        {
-            throw new NotImplementedException();
-        }
+        string id = "userId";
 
         [HttpGet]
-        public Task Delete(string id)
-        {
-            throw new NotImplementedException();
-        }
-
-        [HttpGet]
-        public Task<T> Get(string id)
-        {
-            Dictionary<string, string> g = new Dictionary<string, string>();
-
-             g["hello"] = (string)"name";
-
-            throw new NotImplementedException();
-        }
-
-        [HttpGet]
-        public async Task<IEnumerable<T>> GetAll()
+        public virtual async Task<IEnumerable<T>> GetAll()
         {
             return await baseRepository.GetAll();
         }
+
+        [HttpPost]
+        public virtual async Task<T> Get([FromBody] T entity)
+        {
+            throw new NotImplementedException();
+        }
+
+        [HttpPost]
+        public virtual async Task<T> AddOrUpdate([FromBody] T entity)
+        {
+            throw new NotImplementedException();
+        }
+
+        [HttpPost]
+        public virtual async Task<T> Delete([FromBody] T entity)
+        {
+            throw new NotImplementedException();
+        }
+        //  public async Task<IEnumerable<T>> GetAll()
+        //  {
+        //      return await baseRepository.GetAll();
+        //  }
     }
 }

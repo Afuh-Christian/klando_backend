@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
+using Model;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,11 +9,11 @@ using System.Threading.Tasks;
 
 namespace DataAccess.EntityConfig
 {
-    public class BaseEntityConfig<T> : IEntityTypeConfiguration<T> where T : class
+    public class ClientEntityConfig : IEntityTypeConfiguration<Client>
     {
-        public void Configure(EntityTypeBuilder<T> builder)
+        public void Configure(EntityTypeBuilder<Client> builder)
         {
-            throw new NotImplementedException();
+            builder.Property(e => e.ClientId).HasDefaultValueSql("(newid()");
         }
     }
 }

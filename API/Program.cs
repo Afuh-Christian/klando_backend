@@ -6,7 +6,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 RegisterDependencies.RegisterDbContext(builder.Services, builder.Configuration);
 
-RegisterDependencies.RegisterRepositories(builder.Services, builder.Configuration);
+RegisterDependencies.RegisterRepositories(builder.Services);
 
 //RegisterDependencies.RegisterCORS(builder.Services);
 

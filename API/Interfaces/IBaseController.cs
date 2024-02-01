@@ -1,10 +1,16 @@
-﻿namespace API.Interfaces
+﻿using Microsoft.AspNetCore.Mvc;
+
+namespace API.Interfaces
 {
     public interface IBaseController<T> where T : class
     {
-        Task<T> Get(string id);
-        Task Delete(string id);
-        Task<T> AddOrUPdate(T entity);
+
         Task<IEnumerable<T>> GetAll();
+        Task<T> Get([FromBody] T entity);
+        Task<T> AddOrUpdate([FromBody] T entity);
+        Task<T> Delete([FromBody] T entity);
+
+
+
     }
 }

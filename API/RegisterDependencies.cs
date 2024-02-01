@@ -6,6 +6,8 @@ namespace API
 {
     public static class RegisterDependencies
     {
+
+
         // Add DbContext
         public static void RegisterDbContext(IServiceCollection services ,  IConfiguration configuration) {
             services.AddDbContext<DatabaseContext>(options => options.UseSqlServer(configuration.GetConnectionString("DefaultConnection")));
@@ -13,11 +15,20 @@ namespace API
         
 
         // Add Repositories
-        public static void RegisterRepositories(IServiceCollection services , IConfiguration configuration)
+        public static void RegisterRepositories(IServiceCollection services)
         {
             services.AddTransient<IDatabaseContext, DatabaseContext>();
             services.AddTransient<ClientRepository>();
+            services.AddTransient<DriverRepository>();
+            services.AddTransient<TripRepository>();
+            services.AddTransient<PaymentRepository>();
+            services.AddTransient<TransactionRepository>();
+            services.AddTransient<OrderRepository>();
+            services.AddTransient<ConfirmedRideRepository>();
+            services.AddTransient<ImageRepository>();
+            services.AddTransient<LocationRepository>();
         }
+
 
         // Add Cors
         public static void RegisterCORS(IServiceCollection services)

@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -18,24 +19,29 @@ namespace Repository.Interface
 
         DbSet<T> list => _dbcontext.Set<T>();
 
+
+
+        public virtual Expression<Func<T, bool>> GetByIdExpression(T item) { return t => false; }
+
+
         public virtual Task<T> AddOrUpdate(T entity)
         {
             throw new NotImplementedException();
         }
 
-        public virtual Task Delete(Guid id)
+        public virtual Task Delete(T entity)
         {
             throw new NotImplementedException();
         }
 
-        public virtual Task<T> Get(Guid id)
+        public virtual async Task<T> Get(T entity)
         {
-            throw new NotImplementedException();
+            return await this.list.FirstOrDefaultAsync(GetByIdExpression(entity));
         }
 
         public virtual async Task<IEnumerable<T>> GetAll()
         {
-            return await list.ToListAsync();
+            return await this.list.ToListAsync();
 
         }
    
