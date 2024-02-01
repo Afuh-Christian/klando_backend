@@ -8,6 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = DataAccess
-build_property.ProjectDir = H:\My Files\Projects\Klando\klando_backend\DataAccess\
+build_property.ProjectDir = H:\My Files\Klando\klando_backend\DataAccess\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 

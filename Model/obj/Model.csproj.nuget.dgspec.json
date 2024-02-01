@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "H:\\My Files\\Projects\\Klando\\klando_backend\\Model\\Model.csproj": {}
+    "H:\\My Files\\Klando\\klando_backend\\Model\\Model.csproj": {}
   },
   "projects": {
-    "H:\\My Files\\Projects\\Klando\\klando_backend\\Model\\Model.csproj": {
+    "H:\\My Files\\Klando\\klando_backend\\Model\\Model.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "H:\\My Files\\Projects\\Klando\\klando_backend\\Model\\Model.csproj",
+        "projectUniqueName": "H:\\My Files\\Klando\\klando_backend\\Model\\Model.csproj",
         "projectName": "Model",
-        "projectPath": "H:\\My Files\\Projects\\Klando\\klando_backend\\Model\\Model.csproj",
+        "projectPath": "H:\\My Files\\Klando\\klando_backend\\Model\\Model.csproj",
         "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "H:\\My Files\\Projects\\Klando\\klando_backend\\Model\\obj\\",
+        "outputPath": "H:\\My Files\\Klando\\klando_backend\\Model\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\DevExpress 21.2\\Components\\Offline Packages",

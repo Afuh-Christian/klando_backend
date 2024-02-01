@@ -2699,11 +2699,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "H:\\My Files\\Projects\\Klando\\klando_backend\\Repository\\Repository.csproj",
+      "projectUniqueName": "H:\\My Files\\Klando\\klando_backend\\Repository\\Repository.csproj",
       "projectName": "Repository",
-      "projectPath": "H:\\My Files\\Projects\\Klando\\klando_backend\\Repository\\Repository.csproj",
+      "projectPath": "H:\\My Files\\Klando\\klando_backend\\Repository\\Repository.csproj",
       "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-      "outputPath": "H:\\My Files\\Projects\\Klando\\klando_backend\\Repository\\obj\\",
+      "outputPath": "H:\\My Files\\Klando\\klando_backend\\Repository\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\DevExpress 21.2\\Components\\Offline Packages",
@@ -2726,8 +2726,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "H:\\My Files\\Projects\\Klando\\klando_backend\\DataAccess\\DataAccess.csproj": {
-              "projectPath": "H:\\My Files\\Projects\\Klando\\klando_backend\\DataAccess\\DataAccess.csproj"
+            "H:\\My Files\\Klando\\klando_backend\\DataAccess\\DataAccess.csproj": {
+              "projectPath": "H:\\My Files\\Klando\\klando_backend\\DataAccess\\DataAccess.csproj"
             }
           }
         }

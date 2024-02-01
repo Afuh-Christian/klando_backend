@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "SoYSjNO1e2D99djOBEc5AzGi8xxtJ+zL1sprIIocj5+v6jnYsnFC0nW+sKcyqx1W2iLtUm823L11WWon/OPHLg==",
+  "dgSpecHash": "tyi/VFt4bpLLvL8Flqx9LoFUdcyAlALaJSVZbKouvULJiMjAAps8aZZ3TbUEDQ+7WD7IC3BI7DVmwlT6h073ww==",
   "success": true,
-  "projectFilePath": "H:\\My Files\\Projects\\Klando\\klando_backend\\API\\API.csproj",
+  "projectFilePath": "H:\\My Files\\Klando\\klando_backend\\API\\API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Administrator\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",

@@ -8,6 +8,8 @@ RegisterDependencies.RegisterDbContext(builder.Services, builder.Configuration);
 
 RegisterDependencies.RegisterRepositories(builder.Services, builder.Configuration);
 
+//RegisterDependencies.RegisterCORS(builder.Services);
+
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
