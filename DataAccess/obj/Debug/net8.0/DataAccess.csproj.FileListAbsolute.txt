@@ -1,0 +1,17 @@
+H:\My Files\Projects\Klando\klando_backend\DataAccess\bin\Debug\net8.0\DataAccess.deps.json
+H:\My Files\Projects\Klando\klando_backend\DataAccess\bin\Debug\net8.0\DataAccess.runtimeconfig.json
+H:\My Files\Projects\Klando\klando_backend\DataAccess\bin\Debug\net8.0\DataAccess.dll
+H:\My Files\Projects\Klando\klando_backend\DataAccess\bin\Debug\net8.0\DataAccess.pdb
+H:\My Files\Projects\Klando\klando_backend\DataAccess\bin\Debug\net8.0\Model.dll
+H:\My Files\Projects\Klando\klando_backend\DataAccess\bin\Debug\net8.0\Model.pdb
+H:\My Files\Projects\Klando\klando_backend\DataAccess\obj\Debug\net8.0\DataAccess.csproj.AssemblyReference.cache
+H:\My Files\Projects\Klando\klando_backend\DataAccess\obj\Debug\net8.0\DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+H:\My Files\Projects\Klando\klando_backend\DataAccess\obj\Debug\net8.0\DataAccess.AssemblyInfoInputs.cache
+H:\My Files\Projects\Klando\klando_backend\DataAccess\obj\Debug\net8.0\DataAccess.AssemblyInfo.cs
+H:\My Files\Projects\Klando\klando_backend\DataAccess\obj\Debug\net8.0\DataAccess.csproj.CoreCompileInputs.cache
+H:\My Files\Projects\Klando\klando_backend\DataAccess\obj\Debug\net8.0\DataAccess.csproj.CopyComplete
+H:\My Files\Projects\Klando\klando_backend\DataAccess\obj\Debug\net8.0\DataAccess.dll
+H:\My Files\Projects\Klando\klando_backend\DataAccess\obj\Debug\net8.0\refint\DataAccess.dll
+H:\My Files\Projects\Klando\klando_backend\DataAccess\obj\Debug\net8.0\DataAccess.pdb
+H:\My Files\Projects\Klando\klando_backend\DataAccess\obj\Debug\net8.0\DataAccess.genruntimeconfig.cache
+H:\My Files\Projects\Klando\klando_backend\DataAccess\obj\Debug\net8.0\ref\DataAccess.dll

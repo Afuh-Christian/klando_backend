@@ -1,0 +1,17 @@
+H:\My Files\Projects\Klando\klando_backend\Repository\bin\Debug\net8.0\Repository.deps.json
+H:\My Files\Projects\Klando\klando_backend\Repository\bin\Debug\net8.0\Repository.dll
+H:\My Files\Projects\Klando\klando_backend\Repository\bin\Debug\net8.0\Repository.pdb
+H:\My Files\Projects\Klando\klando_backend\Repository\bin\Debug\net8.0\DataAccess.dll
+H:\My Files\Projects\Klando\klando_backend\Repository\bin\Debug\net8.0\Model.dll
+H:\My Files\Projects\Klando\klando_backend\Repository\bin\Debug\net8.0\DataAccess.pdb
+H:\My Files\Projects\Klando\klando_backend\Repository\bin\Debug\net8.0\Model.pdb
+H:\My Files\Projects\Klando\klando_backend\Repository\obj\Debug\net8.0\Repository.csproj.AssemblyReference.cache
+H:\My Files\Projects\Klando\klando_backend\Repository\obj\Debug\net8.0\Repository.GeneratedMSBuildEditorConfig.editorconfig
+H:\My Files\Projects\Klando\klando_backend\Repository\obj\Debug\net8.0\Repository.AssemblyInfoInputs.cache
+H:\My Files\Projects\Klando\klando_backend\Repository\obj\Debug\net8.0\Repository.AssemblyInfo.cs
+H:\My Files\Projects\Klando\klando_backend\Repository\obj\Debug\net8.0\Repository.csproj.CoreCompileInputs.cache
+H:\My Files\Projects\Klando\klando_backend\Repository\obj\Debug\net8.0\Repository.csproj.CopyComplete
+H:\My Files\Projects\Klando\klando_backend\Repository\obj\Debug\net8.0\Repository.dll
+H:\My Files\Projects\Klando\klando_backend\Repository\obj\Debug\net8.0\refint\Repository.dll
+H:\My Files\Projects\Klando\klando_backend\Repository\obj\Debug\net8.0\Repository.pdb
+H:\My Files\Projects\Klando\klando_backend\Repository\obj\Debug\net8.0\ref\Repository.dll
