@@ -13,8 +13,8 @@ namespace DataAccess.EntityConfig
     {
         public void Configure(EntityTypeBuilder<Driver> builder)
         {
-            builder.Property(e => e.DriverId).HasDefaultValueSql("(newid())");
-            builder.HasKey(e => e.DriverId);
+            builder.Property(e => e.Id).HasDefaultValueSql("(newid())");
+            builder.HasKey(e => e.Id);
         }
     }
 }

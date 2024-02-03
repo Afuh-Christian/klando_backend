@@ -13,8 +13,8 @@ namespace DataAccess.EntityConfig
     {
         public void Configure(EntityTypeBuilder<Trip> builder)
         {
-            builder.Property(e => e.TripId).HasDefaultValueSql("(newid())"); 
-            builder.HasKey(e => e.TripId);
+            builder.Property(e => e.Id).HasDefaultValueSql("(newid())"); 
+            builder.HasKey(e => e.Id);
         }
     }
 }

@@ -14,7 +14,7 @@ namespace Repository.Repositories
     {
         public override Expression<Func<Driver, bool>> GetByIdExpression(Driver item)
         {
-            return c => c.DriverId == item.DriverId;
+            return c => c.Id == item.Id;
         }
     }
 }

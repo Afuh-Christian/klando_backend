@@ -14,7 +14,7 @@ namespace Repository.Repositories
     {
         public override Expression<Func<Location, bool>> GetByIdExpression(Location item)
         {
-            return c => c.LocationId == item.LocationId;
+            return c => c.Id == item.Id;
         }
     }
 }

@@ -12,8 +12,8 @@ namespace DataAccess.EntityConfig
     {
         public void Configure(EntityTypeBuilder<Transaction> builder)
         {
-            builder.Property(e => e.TransactionId).HasDefaultValueSql("(newid())"); 
-            builder.HasKey(e => e.TransactionId);
+            builder.Property(e => e.Id).HasDefaultValueSql("(newid())"); 
+            builder.HasKey(e => e.Id);
         }
     }
 }

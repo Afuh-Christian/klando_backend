@@ -8,7 +8,7 @@ namespace Model
 {
     public partial class Trip
     {
-        public Guid TripId { get; set; }
+        public Guid Id { get; set; }
         public string From { get; set; }
 
         public string To { get; set; }

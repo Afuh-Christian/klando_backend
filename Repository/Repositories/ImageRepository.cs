@@ -14,7 +14,7 @@ namespace Repository.Repositories
     {
         public override Expression<Func<Image, bool>> GetByIdExpression(Image item)
         {
-            return c => c.ImageId == item.ImageId;
+            return c => c.Id == item.Id;
         }
     }
 }

@@ -8,7 +8,7 @@ namespace Model
 {
     public partial class Image
     {
-        public Guid ImageId { get; set; }
+        public Guid Id { get; set; }
         public byte[] Photo { get; set; }
     }
 }

@@ -24,7 +24,7 @@ namespace DataAccess.Migrations
 
             modelBuilder.Entity("Model.Client", b =>
                 {
-                    b.Property<Guid>("ClientId")
+                    b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
 
@@ -49,14 +49,14 @@ namespace DataAccess.Migrations
                     b.Property<Guid>("ProfilePhotoId")
                         .HasColumnType("uniqueidentifier");
 
-                    b.HasKey("ClientId");
+                    b.HasKey("Id");
 
                     b.ToTable("Clients");
                 });
 
             modelBuilder.Entity("Model.ConfirmedRide", b =>
                 {
-                    b.Property<Guid>("ConfirmedRideId")
+                    b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
 
@@ -72,14 +72,14 @@ namespace DataAccess.Migrations
                     b.Property<Guid>("TripId")
                         .HasColumnType("uniqueidentifier");
 
-                    b.HasKey("ConfirmedRideId");
+                    b.HasKey("Id");
 
                     b.ToTable("ConfirmedRides");
                 });
 
             modelBuilder.Entity("Model.Driver", b =>
                 {
-                    b.Property<Guid>("DriverId")
+                    b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
 
@@ -119,28 +119,28 @@ namespace DataAccess.Migrations
                     b.Property<Guid>("ProfilePhotoId")
                         .HasColumnType("uniqueidentifier");
 
-                    b.HasKey("DriverId");
+                    b.HasKey("Id");
 
                     b.ToTable("Drivers");
                 });
 
             modelBuilder.Entity("Model.Image", b =>
                 {
-                    b.Property<Guid>("ImageId")
+                    b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
 
                     b.Property<byte[]>("Photo")
                         .HasColumnType("varbinary(max)");
 
-                    b.HasKey("ImageId");
+                    b.HasKey("Id");
 
                     b.ToTable("Images");
                 });
 
             modelBuilder.Entity("Model.Location", b =>
                 {
-                    b.Property<Guid>("LocationId")
+                    b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
 
@@ -150,14 +150,14 @@ namespace DataAccess.Migrations
                     b.Property<double>("Longitude")
                         .HasColumnType("float");
 
-                    b.HasKey("LocationId");
+                    b.HasKey("Id");
 
                     b.ToTable("Locations");
                 });
 
             modelBuilder.Entity("Model.Order", b =>
                 {
-                    b.Property<Guid>("OrderId")
+                    b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
 
@@ -176,14 +176,14 @@ namespace DataAccess.Migrations
                     b.Property<string>("To")
                         .HasColumnType("nvarchar(max)");
 
-                    b.HasKey("OrderId");
+                    b.HasKey("Id");
 
                     b.ToTable("Orders");
                 });
 
             modelBuilder.Entity("Model.Payment", b =>
                 {
-                    b.Property<Guid>("PaymentId")
+                    b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
 
@@ -199,14 +199,14 @@ namespace DataAccess.Migrations
                     b.Property<Guid>("TransactionId")
                         .HasColumnType("uniqueidentifier");
 
-                    b.HasKey("PaymentId");
+                    b.HasKey("Id");
 
                     b.ToTable("Payments");
                 });
 
             modelBuilder.Entity("Model.Transaction", b =>
                 {
-                    b.Property<Guid>("TransactionId")
+                    b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
 
@@ -219,14 +219,14 @@ namespace DataAccess.Migrations
                     b.Property<Guid>("TripId")
                         .HasColumnType("uniqueidentifier");
 
-                    b.HasKey("TransactionId");
+                    b.HasKey("Id");
 
                     b.ToTable("Transactions");
                 });
 
             modelBuilder.Entity("Model.Trip", b =>
                 {
-                    b.Property<Guid>("TripId")
+                    b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
 
@@ -248,7 +248,7 @@ namespace DataAccess.Migrations
                     b.Property<string>("To")
                         .HasColumnType("nvarchar(max)");
 
-                    b.HasKey("TripId");
+                    b.HasKey("Id");
 
                     b.ToTable("Trips");
                 });

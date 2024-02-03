@@ -8,7 +8,7 @@ namespace Model
 {
     public partial class Location
     {
-        public Guid LocationId { get; set; }
+        public Guid Id { get; set; }
         public double Longitude { get; set; } = 0.0;
         public double Latitude { get; set; } = 0.0;
     }

@@ -13,8 +13,8 @@ namespace DataAccess.EntityConfig
     {
         public void Configure(EntityTypeBuilder<ConfirmedRide> builder)
         {
-            builder.Property(e => e.ConfirmedRideId).HasDefaultValueSql("(newid())");
-            builder.HasKey(e => e.ConfirmedRideId);
+            builder.Property(e => e.Id).HasDefaultValueSql("(newid())");
+            builder.HasKey(e => e.Id);
         }
 
         

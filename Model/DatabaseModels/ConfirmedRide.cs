@@ -8,7 +8,9 @@ namespace Model
 {
     public partial class ConfirmedRide
     {
-        public Guid ConfirmedRideId { get; set; }
+        public Guid Id { get; set; }
+
+      //  public Guid ConfirmedRideId { get; set; }
 
         public Guid ClientLocationId { get; set; }
 

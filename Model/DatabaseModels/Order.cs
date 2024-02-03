@@ -9,7 +9,7 @@ namespace Model
     public partial class Order
     {
 
-        public Guid OrderId { get; set; }
+        public Guid Id { get; set; }
         public string From { get; set; }
         public string To { get; set; }
         public DateTime DepartureTime { get; set; }

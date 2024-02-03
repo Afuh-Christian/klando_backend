@@ -1,6 +1,7 @@
 ﻿using API.Interfaces;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Model.DatabaseModels;
 using Repository.Interface;
 
 namespace API.Controllers
@@ -15,13 +16,11 @@ namespace API.Controllers
             this.baseRepository = baseRepository;
         }
 
-        string id = "userId";
-
-        [HttpGet]
-        public virtual async Task<IEnumerable<T>> GetAll()
-        {
-            return await baseRepository.GetAll();
-        }
+       [HttpGet]
+       public virtual async Task<IEnumerable<T>> GetAll()
+       {
+           return await baseRepository.GetAll();
+       }
 
         [HttpPost]
         public virtual async Task<T> Get([FromBody] T entity)
@@ -33,17 +32,13 @@ namespace API.Controllers
         [HttpPost]
         public virtual async Task<T> AddOrUpdate([FromBody] T entity)
         {
-            return await this.baseRepository.AddOrUpdate(entity);   
+            return await this.baseRepository.AddOrUpdate(entity);  
         }
 
         [HttpPost]
-        public virtual async Task<T> Delete([FromBody] T entity)
+        public virtual async Task<SuccessObject> Delete([FromBody] T entity)
         {
-            throw new NotImplementedException();
+            return await baseRepository.Delete(entity);
         }
-        //  public async Task<IEnumerable<T>> GetAll()
-        //  {
-        //      return await baseRepository.GetAll();
-        //  }
     }
 }

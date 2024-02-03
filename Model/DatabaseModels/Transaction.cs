@@ -8,7 +8,7 @@ namespace Model
 {
     public partial class Transaction
     {
-        public Guid TransactionId { get; set; }
+        public Guid Id { get; set; }
         public DateTime Time { get; set; }
         public Guid DriverId { get; set; }
         public Guid TripId { get; set; }

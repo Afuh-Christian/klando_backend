@@ -13,8 +13,8 @@ namespace DataAccess.EntityConfig
     {
         public void Configure(EntityTypeBuilder<Image> builder)
         {
-            builder.Property(e => e.ImageId).HasDefaultValueSql("(newid())");
-            builder.HasKey(e => e.ImageId);
+            builder.Property(e => e.Id).HasDefaultValueSql("(newid())");
+            builder.HasKey(e => e.Id);
         }
     }
 }

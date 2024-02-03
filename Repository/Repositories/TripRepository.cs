@@ -17,7 +17,7 @@ namespace Repository.Repositories
 
         public override Expression<Func<Trip, bool>> GetByIdExpression(Trip item)
         {
-            return c => c.TripId == item.TripId;
+            return c => c.Id == item.Id;
         }
     }
 }

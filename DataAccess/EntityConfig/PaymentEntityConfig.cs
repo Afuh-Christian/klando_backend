@@ -13,8 +13,8 @@ namespace DataAccess.EntityConfig
     {
         public void Configure(EntityTypeBuilder<Payment> builder)
         {
-           builder.Property(e => e.PaymentId).HasDefaultValueSql(Guid.NewGuid().ToString());
-           builder.HasKey(e => e.PaymentId);
+           builder.Property(e => e.Id).HasDefaultValueSql(Guid.NewGuid().ToString());
+           builder.HasKey(e => e.Id);
         }
     }
 }
