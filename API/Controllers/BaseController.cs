@@ -26,13 +26,14 @@ namespace API.Controllers
         [HttpPost]
         public virtual async Task<T> Get([FromBody] T entity)
         {
-            throw new NotImplementedException();
+            
+            return await baseRepository.Get(entity);
         }
 
         [HttpPost]
         public virtual async Task<T> AddOrUpdate([FromBody] T entity)
         {
-            throw new NotImplementedException();
+            return await this.baseRepository.AddOrUpdate(entity);   
         }
 
         [HttpPost]

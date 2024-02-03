@@ -9,12 +9,12 @@ using System.Threading.Tasks;
 
 namespace DataAccess.EntityConfig
 {
-    public class DriverEntityConfig : IEntityTypeConfiguration<Driver>
+    public class TripEntityConfig : IEntityTypeConfiguration<Trip>
     {
-        public void Configure(EntityTypeBuilder<Driver> builder)
+        public void Configure(EntityTypeBuilder<Trip> builder)
         {
-            builder.Property(e => e.DriverId).HasDefaultValueSql("(newid())");
-            builder.HasKey(e => e.DriverId);
+            builder.Property(e => e.TripId).HasDefaultValueSql("(newid())"); 
+            builder.HasKey(e => e.TripId);
         }
     }
 }

@@ -6,15 +6,14 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
 namespace DataAccess.EntityConfig
 {
-    public class DriverEntityConfig : IEntityTypeConfiguration<Driver>
+    public class TransactionEntityConfig : IEntityTypeConfiguration<Transaction>
     {
-        public void Configure(EntityTypeBuilder<Driver> builder)
+        public void Configure(EntityTypeBuilder<Transaction> builder)
         {
-            builder.Property(e => e.DriverId).HasDefaultValueSql("(newid())");
-            builder.HasKey(e => e.DriverId);
+            builder.Property(e => e.TransactionId).HasDefaultValueSql("(newid())"); 
+            builder.HasKey(e => e.TransactionId);
         }
     }
 }

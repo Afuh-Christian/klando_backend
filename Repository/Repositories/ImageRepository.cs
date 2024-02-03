@@ -4,15 +4,17 @@ using Repository.Interface;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace Repository.Repositories
 {
-    public class ImageRepository : BaseRepository<Image>
+    public class ImageRepository(DatabaseContext dbcontext) : BaseRepository<Image>(dbcontext)
     {
-        public ImageRepository(IDatabaseContext dbcontext) : base(dbcontext)
+        public override Expression<Func<Image, bool>> GetByIdExpression(Image item)
         {
+            return c => c.ImageId == item.ImageId;
         }
     }
 }

@@ -4,15 +4,17 @@ using Repository.Interface;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace Repository.Repositories
 {
-    public class LocationRepository : BaseRepository<Location>
+    public class LocationRepository(DatabaseContext dbcontext) : BaseRepository<Location>(dbcontext)
     {
-        public LocationRepository(IDatabaseContext dbcontext) : base(dbcontext)
+        public override Expression<Func<Location, bool>> GetByIdExpression(Location item)
         {
+            return c => c.LocationId == item.LocationId;
         }
     }
 }

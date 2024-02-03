@@ -12,11 +12,8 @@ namespace DataAccess.DataContext
 {
     public interface IDatabaseContext
     {
-
-
         DbSet<TEntity> Set<[DynamicallyAccessedMembers(DynamicallyAccessedMemberTypes.PublicConstructors|DynamicallyAccessedMemberTypes.NonPublicConstructors|DynamicallyAccessedMemberTypes.PublicFields|DynamicallyAccessedMemberTypes.NonPublicFields|DynamicallyAccessedMemberTypes.PublicProperties|DynamicallyAccessedMemberTypes.NonPublicProperties | DynamicallyAccessedMemberTypes.Interfaces)] TEntity>() where TEntity : class;
         DatabaseFacade DatabaseFacade { get; }
-
 
 
 

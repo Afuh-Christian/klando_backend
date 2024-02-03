@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using DataAccess.EntityConfig;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Model;
 using System;
@@ -9,12 +10,8 @@ using System.Threading.Tasks;
 
 namespace DataAccess.DataContext
 {
-    public class DatabaseContext : DbContext, IDatabaseContext
+    public class DatabaseContext(DbContextOptions<DatabaseContext> options) : DbContext(options), IDatabaseContext
     {
-        public DatabaseContext(DbContextOptions<DatabaseContext> options) : base(options)
-        {
-        }
-
         public DatabaseFacade DatabaseFacade => throw new NotImplementedException();
 
         public DbSet<Trip> Trips => throw new NotImplementedException();
@@ -34,5 +31,21 @@ namespace DataAccess.DataContext
         public DbSet<Transaction> Transactions => throw new NotImplementedException();
 
         public DbSet<Order> Orders => throw new NotImplementedException();
+
+
+
+
+        protected void  OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.ApplyConfiguration(new ClientEntityConfig());
+            modelBuilder.ApplyConfiguration(new DriverEntityConfig());
+            modelBuilder.ApplyConfiguration(new TripEntityConfig());
+            modelBuilder.ApplyConfiguration(new ImageEntityConfig());
+            modelBuilder.ApplyConfiguration(new OrderEntityConfig());
+            modelBuilder.ApplyConfiguration(new TransactionEntityConfig());
+            modelBuilder.ApplyConfiguration(new ConfirmRideEntityConfig());
+            modelBuilder.ApplyConfiguration(new PaymentEntityConfig());
+            modelBuilder.ApplyConfiguration(new LocationEntityConfig());
+        }
     }
 }
