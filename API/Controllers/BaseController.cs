@@ -1,4 +1,5 @@
 ﻿using API.Interfaces;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Model.DatabaseModels;
@@ -7,7 +8,7 @@ using Repository.Interface;
 namespace API.Controllers
 {
     [Route("api/[controller]/[action]")]
-    [ApiController]
+    [ApiController ,Authorize]
     public class BaseController<T> : ControllerBase, IBaseController<T> where T : class
     {
         protected IBaseRepository<T> baseRepository; 
@@ -16,7 +17,7 @@ namespace API.Controllers
             this.baseRepository = baseRepository;
         }
 
-       [HttpGet]
+       [HttpGet , AllowAnonymous]
        public virtual async Task<IEnumerable<T>> GetAll()
        {
            return await baseRepository.GetAll();

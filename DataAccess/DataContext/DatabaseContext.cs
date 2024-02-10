@@ -1,4 +1,5 @@
 ﻿using DataAccess.EntityConfig;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Model;
@@ -10,7 +11,7 @@ using System.Threading.Tasks;
 
 namespace DataAccess.DataContext
 {
-    public class DatabaseContext(DbContextOptions<DatabaseContext> options) : DbContext(options), IDatabaseContext
+    public class DatabaseContext(DbContextOptions<DatabaseContext> options) : IdentityDbContext(options), IDatabaseContext
     {
         public DatabaseFacade DatabaseFacade => throw new NotImplementedException();
 

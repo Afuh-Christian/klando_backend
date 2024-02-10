@@ -283,3 +283,12 @@ H:\My Files\Klando\klando_backend\API\obj\Debug\net8.0\refint\API.dll
 H:\My Files\Klando\klando_backend\API\obj\Debug\net8.0\API.pdb
 H:\My Files\Klando\klando_backend\API\obj\Debug\net8.0\API.genruntimeconfig.cache
 H:\My Files\Klando\klando_backend\API\obj\Debug\net8.0\ref\API.dll
+H:\My Files\Klando\klando_backend\API\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+H:\My Files\Klando\klando_backend\API\bin\Debug\net8.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+H:\My Files\Klando\klando_backend\API\bin\Debug\net8.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+H:\My Files\Klando\klando_backend\API\bin\Debug\net8.0\Microsoft.Extensions.Identity.Core.dll
+H:\My Files\Klando\klando_backend\API\bin\Debug\net8.0\Microsoft.Extensions.Identity.Stores.dll
+H:\My Files\Klando\klando_backend\API\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+H:\My Files\Klando\klando_backend\API\bin\Debug\net8.0\Scrutor.dll
+H:\My Files\Klando\klando_backend\API\bin\Debug\net8.0\Swashbuckle.AspNetCore.Filters.dll
+H:\My Files\Klando\klando_backend\API\bin\Debug\net8.0\Swashbuckle.AspNetCore.Filters.Abstractions.dll

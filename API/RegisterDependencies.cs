@@ -1,4 +1,5 @@
 ﻿using DataAccess.DataContext;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Repository.Repositories;
 
@@ -34,6 +35,15 @@ namespace API
         public static void RegisterCORS(IServiceCollection services)
         {
             services.AddCors(options => options.AddPolicy("klando_frontend", builder => builder.WithOrigins("http://localhost:3000").AllowAnyHeader().AllowAnyMethod().AllowCredentials()));
+        }
+
+
+        // Authentication . 
+        public static void RegisterAuth(IServiceCollection services, IConfiguration config)
+        {
+            services.AddAuthorization();
+            services.AddIdentityApiEndpoints<IdentityUser>()
+                .AddEntityFrameworkStores<DatabaseContext>();
         }
     }
 }
