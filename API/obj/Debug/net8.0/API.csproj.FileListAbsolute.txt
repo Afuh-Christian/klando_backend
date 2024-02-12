@@ -292,3 +292,4 @@ H:\My Files\Klando\klando_backend\API\bin\Debug\net8.0\Microsoft.Extensions.Opti
 H:\My Files\Klando\klando_backend\API\bin\Debug\net8.0\Scrutor.dll
 H:\My Files\Klando\klando_backend\API\bin\Debug\net8.0\Swashbuckle.AspNetCore.Filters.dll
 H:\My Files\Klando\klando_backend\API\bin\Debug\net8.0\Swashbuckle.AspNetCore.Filters.Abstractions.dll
+H:\My Files\Klando\klando_backend\API\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.Google.dll

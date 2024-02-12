@@ -39,11 +39,20 @@ namespace API
 
 
         // Authentication . 
-        public static void RegisterAuth(IServiceCollection services, IConfiguration config)
+        public static void RegisterAuth(IServiceCollection services, IConfiguration configuration)
         {
+
+            services.AddAuthentication()
+                .AddGoogle(googleOptions =>
+            {
+                googleOptions.ClientId = configuration["Authentication:Google:ClientId"];
+                googleOptions.ClientSecret = configuration["Authentication:Google:ClientSecret"];
+            });
             services.AddAuthorization();
             services.AddIdentityApiEndpoints<IdentityUser>()
                 .AddEntityFrameworkStores<DatabaseContext>();
+
+
         }
     }
 }

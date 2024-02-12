@@ -7,6 +7,8 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
+RegisterDependencies.RegisterCORS(builder.Services);
+
 RegisterDependencies.RegisterAuth(builder.Services, builder.Configuration);
 
 RegisterDependencies.RegisterDbContext(builder.Services, builder.Configuration);
@@ -37,6 +39,8 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+
+app.UseCors("klando_frontend");
 
 app.MapIdentityApi<IdentityUser>();
 
