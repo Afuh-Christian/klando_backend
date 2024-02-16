@@ -1,4 +1,5 @@
 ﻿using DataAccess.EntityConfig;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
@@ -11,7 +12,7 @@ using System.Threading.Tasks;
 
 namespace DataAccess.DataContext
 {
-    public class DatabaseContext(DbContextOptions<DatabaseContext> options) : IdentityDbContext(options), IDatabaseContext
+    public class DatabaseContext(DbContextOptions<DatabaseContext> options) : IdentityDbContext<ApplicationUser>(options), IDatabaseContext
     {
         public DatabaseFacade DatabaseFacade => throw new NotImplementedException();
 
@@ -36,7 +37,7 @@ namespace DataAccess.DataContext
 
 
 
-        protected void  OnModelCreating(ModelBuilder modelBuilder)
+        public  void  OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.ApplyConfiguration(new ClientEntityConfig());
             modelBuilder.ApplyConfiguration(new DriverEntityConfig());
