@@ -10,8 +10,9 @@ namespace Model
 {
     public partial class ApplicationUser : IdentityUser
     {
-        public string Name { get; set; }
-        public Guid CurrentLocationId { get; set; } 
-        public Guid ProfilePhotoId { get; set; }
+        public string? Name { get; set; }
+        public string? PhotoUrl { get; set; }
+        public Guid? CurrentLocationId { get; set; }
+        public Guid? ProfilePhotoId { get; set; }
     }
 }

@@ -36,6 +36,7 @@ public static class RegisterDependencies
         services.AddTransient<ConfirmedRideRepository>();
         services.AddTransient<ImageRepository>();
         services.AddTransient<LocationRepository>();
+        services.AddTransient<AuthRepository>();
     }
 
 

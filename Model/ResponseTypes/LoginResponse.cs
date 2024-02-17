@@ -11,6 +11,9 @@ namespace Model.ResponseTypes
   
     public record class LoginResponseithTokens(string AccessToken, int Life , string RefreshToken , DateTime LifeSpan );
 
+
+    public record class AppUserTokensNameAndProvider(string TokenProvider = "Klando", string Name = "refresh");
+
     public class LoginResponse
     {
         [Required]
