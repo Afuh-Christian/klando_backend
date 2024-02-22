@@ -24,10 +24,10 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(options => {
     options.AddSecurityDefinition("oauth2", new OpenApiSecurityScheme
     {
-        In = ParameterLocation.Header,
-        Name = "Authorization",
-        Type = SecuritySchemeType.ApiKey
-
+        In = ParameterLocation.Header, 
+        Name = "Authorization", 
+        Type = SecuritySchemeType.ApiKey 
+        
     });
     options.OperationFilter<SecurityRequirementsOperationFilter>();
 });
@@ -56,6 +56,7 @@ app.MapSwagger().RequireAuthorization();
 
 app.UseHttpsRedirection();
 
+app.UseCookiePolicy();
 
 app.UseAuthentication();
 

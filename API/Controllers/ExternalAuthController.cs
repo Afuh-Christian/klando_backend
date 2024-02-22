@@ -31,25 +31,7 @@ namespace API.Controllers
         private readonly HttpClient _httpClient = new();
 
 
-        [HttpPost]
-        public async Task<IActionResult> Authlogin([FromBody] UserDto userDto)
-        {
-
-            var IspresentUser = await _userManager.FindByEmailAsync(userDto.Email);
-
-            if (IspresentUser != null) return BadRequest("User Already Present");
-
-            var createUser = await _userManager.CreateAsync(new IdentityUser()
-            {
-                Email = userDto.Email,
-                UserName = userDto.Email,
-                PasswordHash = userDto.PasswordHash,
-            } , userDto.PasswordHash);
-
-            if(createUser.Succeeded!) return NoContent();
-
-            return Ok(userDto);
-        } 
+    
 
 
 
@@ -121,7 +103,7 @@ namespace API.Controllers
             [HttpPost]
             public Task<IActionResult> FaceBookAuth([FromBody] FacebookRequestType facebookRequestType)
             {
-                facebookRequestType.AppId = configuration["Authentication:Facebook:AppId"];
+                //facebookRequestType.AppId = configuration["Authentication:Facebook:AppId"];
         
                 Log.Information("FacebookAuth => {@facebookRequestType}", facebookRequestType);
         

@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Authentication.Google;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
 using Microsoft.IdentityModel.Tokens;
 using Model;
 using Repository.Repositories;
@@ -58,9 +59,18 @@ public static class RegisterDependencies
             .AddIdentity<ApplicationUser, IdentityRole>()
             .AddEntityFrameworkStores<DatabaseContext>()
             .AddSignInManager()
-           // .AddUserManager<IdentityUser>()
-           // .AddUserStore<DatabaseContext>()
-            .AddRoles<IdentityRole>();
+            // .AddRoleManager<RoleManager<IdentityRole>>()
+            // .AddUserManager<IdentityUser>()
+            // .AddUserStore<DatabaseContext>()
+            // .AddDefaultTokenProviders()
+
+            .AddRoles<IdentityRole>()
+           ;
+        
+
+
+        // Add httpClient to support IHttpClientFactory 
+        services.AddHttpClient();
 
 
         // JWT 
@@ -69,6 +79,7 @@ public static class RegisterDependencies
             options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
             options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
         })
+             .AddCookie()
             .AddJwtBearer(options =>
             {
                 options.TokenValidationParameters = new TokenValidationParameters
